@@ -59,6 +59,7 @@ public:
 		}
 
 		delete[]users;
+		users = buf;
 		countUsers--;
 
 	}
@@ -80,7 +81,8 @@ int main() {
 		Phonebook.addUser(new User(names[gen_rand(0, 3)], number[0,3]));;
 	}
 	Phonebook.showInfo();
-	
+	Phonebook.removeUser(3);
+	Phonebook.showInfo();
 	
 	//Phonebook.addUser(new User(names[4], number[4]));
 	
